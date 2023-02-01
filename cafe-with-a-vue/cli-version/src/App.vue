@@ -8,7 +8,10 @@
 				matin ou avec un goûter réconfortant. Mais attention, vous verrez qu'il
 				est difficile de s'arrêter.
 			</p>
-      <MenuItem></MenuItem>
+      <MenuItem
+			v-for="item in simpleMenu"
+			
+	  ></MenuItem>
 			<aside class="shopping-cart">
 				<h2>Panier d'achat : {{ shoppingCart }} articles</h2>
 			</aside>

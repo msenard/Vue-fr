@@ -1,13 +1,12 @@
 <template>
-    <h2>Menu</h2>
-    <div v-for="item in simpleMenu" :key="name" class="menu-item">
-        <img
+    <div class="menu-item">
+        <div>
+            <h3>{{ name }}</h3>
+            <img
             class="menu-item__image"
             v-bind:src="image.source"
             v-bind:alt="image.alt"
-        />
-        <div>
-            <h3>{{ name }}</h3>
+            />
             <p v-if="inStock">En stock</p>
             <p v-else>En rupture de stock</p>
             <div>

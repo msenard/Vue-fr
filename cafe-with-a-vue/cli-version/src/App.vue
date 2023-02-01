@@ -10,7 +10,11 @@
 			</p>
       <MenuItem
 			v-for="item in simpleMenu"
-			
+			:image="item.source"
+			:quantity="item.quantity"
+			:addToShoppingCart="item.addToShoppingCart"
+			:inStock="item.inStock"
+			:name="item.name"
 	  ></MenuItem>
 			<aside class="shopping-cart">
 				<h2>Panier d'achat : {{ shoppingCart }} articles</h2>
